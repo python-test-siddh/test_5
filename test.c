@@ -34,14 +34,13 @@ static PyObject* fib(PyObject* self, PyObject* args)
 // definition
 static PyMethodDef myMethods[] = {
      { "fib", fib, METH_VARARGS, "returns fibonnaci" },
-    { NULL, NULL, 0, NULL },
     {
         "helloworld", // name exposed to Python
         helloworld, // C wrapper function
         METH_NOARGS, // received no args (but really just 1)
         "  returns hello world" // documentation
     },
-    { NULL, NULL, 0, NULL }
+    { NULL, NULL, 0, NULL } //sentinel return 
     
 };
 
