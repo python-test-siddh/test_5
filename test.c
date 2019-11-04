@@ -33,7 +33,7 @@ static PyObject* fib(PyObject* self, PyObject* args)
 // We require this `NULL` to signal the end of our method
 // definition
 static PyMethodDef myMethods[] = {
-     { "fib", fib, METH_NOARGS, "returns fibonnaci" },
+     { "fib", fib, METH_VARARGS, "returns fibonnaci" },
     { NULL, NULL, 0, NULL }
 };
 
