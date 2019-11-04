@@ -34,6 +34,8 @@ static PyObject* fib(PyObject* self, PyObject* args)
 // definition
 static PyMethodDef myMethods[] = {
     { "helloworld", helloworld, METH_NOARGS, "Prints Hello World" },
+    { NULL, NULL, 0, NULL },
+     { "fib", fib, METH_NOARGS, "returns fibonnaci" },
     { NULL, NULL, 0, NULL }
 };
 
